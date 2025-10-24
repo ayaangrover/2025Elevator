@@ -26,13 +26,11 @@ public class ElevatorManual extends Command
     @Override
     public void execute ()
     {
-        ElevatorSim.voltageApplied = (2.0) * RobotContainer.getInstance().controller.getLeftX();
-    }
-
-    @Override
-    public boolean isFinished ()
-    {
-        return false;
+        if (ElevatorSim.position > 0)
+        {
+            ElevatorSim.voltageApplied = 0.1;
+            // System.out.println(ElevatorSim.voltageApplied);
+        }
     }
 
     @Override

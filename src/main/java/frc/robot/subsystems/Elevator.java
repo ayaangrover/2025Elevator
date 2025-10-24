@@ -55,6 +55,8 @@ public class Elevator extends SubsystemBase
     @Override
     public void periodic ()
     {
+        height = ElevatorSim.position;
+        voltageApplied = ElevatorSim.voltageApplied;
         ElevatorSim.update(); // make sure to keep this line either at the
                               // start or at the end of your method body
     }

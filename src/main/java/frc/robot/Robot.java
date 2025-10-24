@@ -19,6 +19,7 @@ public class Robot extends TimedRobot
 	{
 		RobotContainer.getInstance();
 		Elevator.getInstance();
+		
 	}
 
 	@Override
